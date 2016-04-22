@@ -1,0 +1,16 @@
+Working on:
+main.m
+inertiaTriPrism.m
+
+Issues/Improvements to working code:
+
+
+====================================================
+
+inertiaTriPrism
+---------------
+Calculate Ixx, Iyy, Izz, Iyz
+
+main
+----
+Lots.
