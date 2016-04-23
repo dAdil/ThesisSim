@@ -1,16 +1,21 @@
 Working on:
 main.m
 inertiaTriPrism.m
+aircraftInertias.m
 
 Issues/Improvements to working code:
 
 
 ====================================================
 
+main
+----
+Lots.
+
 inertiaTriPrism
 ---------------
 Calculate Ixx, Iyy, Izz, Iyz
 
-main
-----
-Lots.
+aircraftInertias
+----------------
+Missing triangular inertias
