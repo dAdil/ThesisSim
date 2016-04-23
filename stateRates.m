@@ -1,7 +1,8 @@
 % Function to calculate the rate of changeof the state variables
 % http://web.aeromech.usyd.edu.au//flightm/aero3500/AERO3560_Week_2_Slides.pdf
 function Xdot = stateRates(X,controls)
-	% Initial declaration
+	% Variable declarations
+	global g m Ixx Iyy Izz Ixz;
 	Xdot = nans(13,1);
 
 	% Calculate body forces [Fx,Fy,Fz,Mx (L),My (M),Mz (N)]'

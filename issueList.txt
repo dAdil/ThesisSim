@@ -1,9 +1,12 @@
 Working on:
-main.m
-inertiaTriPrism.m
+ - main.m
+ - inertiaTriPrism.m
+ - bodyForces.m
+ - q2e.m
 
 Issues/Improvements to working code:
-Save aircraft inertias to file which main can then load from.
+ - Save aircraft inertias to global.
+ - Check and debug stateRates.
 
 ====================================================
 
@@ -14,3 +17,11 @@ Lots.
 inertiaTriPrism
 ---------------
 Calculate Iyy, Izz
+
+bodyForces.m
+------------
+Lots. 
+
+q2e.m
+-----
+Lots. 
