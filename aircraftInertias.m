@@ -41,13 +41,17 @@ inertia = inertia + parrAxis([inertiaCylinder(0.127,0.01,0.011);0;0;0],[-0.37,0.
 % Airframe
 % ========
 % Upper wing
-% MISSING
+inertia = inertia + parrAxis([inertiaTriPrism(1,0.006,0.118);0;0;0],[-0.07;0;0],0.118);
 % Lower wing
 inertia = inertia + parrAxis([inertiaRectPrism(0.05,1,0.006,0.024);0;0;0],[-0.265,0,0],0.024);
 % Left Stand
-% MISSING
+StandInertia1 = inertiaTriPrism(0.36,0.006,0.028);
+StandInertia2(1,1) = StandInertia1(1,1);
+StandInertia2(2,1) = StandInertia1(3,1);
+StandInertia2(3,1) = StandInertia1(2,1);
+inertia = inertia + parrAxis([StandInertia2;0;0;0],[-0.265;-0.305;0],0.028);
 % Right Stand
-% MISSING
+inertia = inertia + parrAxis([StandInertia2;0;0;0],[-0.265;0.305;0],0.028);
 % Left Stringer
 inertia = inertia + parrAxis([inertiaRectPrism(0.4,0.006,0.05,0.009);0;0;0],[-0.09,-0.15,0],0.009);
 % Right Stringer

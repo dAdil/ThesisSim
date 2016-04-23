@@ -1,10 +1,9 @@
 Working on:
 main.m
 inertiaTriPrism.m
-aircraftInertias.m
 
 Issues/Improvements to working code:
-
+Save aircraft inertias to file which main can then load from.
 
 ====================================================
 
@@ -14,8 +13,4 @@ Lots.
 
 inertiaTriPrism
 ---------------
-Calculate Ixx, Iyy, Izz, Iyz
-
-aircraftInertias
-----------------
-Missing triangular inertias
+Calculate Iyy, Izz
