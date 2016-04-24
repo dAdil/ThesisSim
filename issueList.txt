@@ -1,16 +1,12 @@
 Working on:
  - main.m
- - bodyForces.m
 
 Issues/Improvements to working code:
  - Check and debug stateRates.
+ - Check and debug bodyForces.
 
 ====================================================
 
 main
 ----
 Lots.
-
-bodyForces.m
-------------
-Lots. 
