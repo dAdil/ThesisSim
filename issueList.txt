@@ -1,7 +1,6 @@
 Working on:
  - main.m
  - bodyForces.m
- - q2e.m
 
 Issues/Improvements to working code:
  - Check and debug stateRates.
@@ -14,8 +13,4 @@ Lots.
 
 bodyForces.m
 ------------
-Lots. 
-
-q2e.m
------
 Lots. 
