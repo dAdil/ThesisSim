@@ -3,7 +3,7 @@
 function Xdot = stateRates(X,controls)
 	% Variable declarations
 	global g m Ixx Iyy Izz Ixz;
-	Xdot = nans(13,1);
+	Xdot = zeros(13,1);
 
 	% Calculate body forces [Fx,Fy,Fz,Mx (L),My (M),Mz (N)]'
 	BodyForces = bodyForces(controls);
@@ -31,7 +31,7 @@ function Xdot = stateRates(X,controls)
 	% pqr dot
 	Xdot(4) = C3 * X(4) * X(5) + C4 * X(5) * X(6) + C1 * BodyForces(4) + C2 * BodyForces(6);
 	Xdot(5) = C7 * X(4) * X(6) - C6 * (X(4)^2 - X(6)^2) + C5 * BodyForces(5);
-	Xdot(6) = C9 * X(4) * X(5) - C3 * X(5) * X(6) + C2 * BodyForces(4) + C8 * Bodyforces(6);
+	Xdot(6) = C9 * X(4) * X(5) - C3 * X(5) * X(6) + C2 * BodyForces(4) + C8 * BodyForces(6);
 
 	% Quaternion dot
 	Xdot(7) = -0.5 * (X(8) * X(4) + X(9) * X(5) + X(10) * X(6));
