@@ -6,6 +6,7 @@ close all;
 clc;
 
 addpath('CommonFunctions');
+fileID = fopen('log.txt','w');
 
 % Aircraft data and constants
 global g m Ixx Iyy Izz Ixz;
@@ -31,5 +32,12 @@ t 	= 0:dt:10;
 % u,v,w,p,q,r,q0,q1,q2,q3,x,y,z
 
 X = [0,0,0,0,0,0,[e2q([phi0;theta0;psi0])]',0,0,0]';
+U = [1500,1500,1500,1500]';
+
+% Step forward integration
+for i = 1:length(t)
+	X = integrate(X,U,dt);
+	fprintf(fileID,"%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\n",X(1),X(2),X(3),X(4),X(5),X(6),X(7),X(8),X(9),X(10),X(11),X(12),X(13));
+end
 
 
