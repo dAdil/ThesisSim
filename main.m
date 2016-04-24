@@ -13,10 +13,11 @@ g = 9.81;
 
 m = 0.840;
 
-Ixx = 0;
-Iyy = 0;
-Izz = 0;
-Ixz = 0;
+aircraftInertias;
+Ixx = inertia(1);
+Iyy = inertia(2);
+Izz = inertia(3);
+Ixz = inertia(5);
 
 % Initial conditions
 phi0   	= 10.0*pi/180.0;

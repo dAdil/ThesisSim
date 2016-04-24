@@ -1,11 +1,7 @@
 % Script to calculate the inertias of the aircraft
 
-% Reset matlab
-clear all;
-close all;
-clc;
-
 % Initialise
+global inertia;
 inertia = zeros(6,1);
 
 % Battery
