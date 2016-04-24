@@ -2,9 +2,12 @@ Working on:
  - main.m
 
 Issues/Improvements to working code:
+ - Get improved thrust model from Matt / calculate it yourself. 
+
  - Check and debug stateRates
  - Check and debug bodyForces
  - Check and debug integrate
+ - Double check inertiaTriPrism
 
 ====================================================
 
