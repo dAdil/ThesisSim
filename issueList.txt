@@ -2,8 +2,9 @@ Working on:
  - main.m
 
 Issues/Improvements to working code:
- - Check and debug stateRates.
- - Check and debug bodyForces.
+ - Check and debug stateRates
+ - Check and debug bodyForces
+ - Check and debug integrate
 
 ====================================================
 
