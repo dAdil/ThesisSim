@@ -4,7 +4,7 @@ function Xdot = stateRates(X,controls)
 	% Variable declarations
 	global g m Ixx Iyy Izz Ixz;
 	Xdot = zeros(13,1);
-
+	
 	% Calculate body forces [Fx,Fy,Fz,Mx (L),My (M),Mz (N)]'
 	BodyForces = bodyForces(controls);
 	
@@ -17,7 +17,7 @@ function Xdot = stateRates(X,controls)
 	Xdot(3) = X(5)*X(1) - X(4)*X(2) + g*cos(eulers(1))*cos(eulers(2)) + BodyForces(3)/m;
 
 	% Inertial constants (required for pqr dot calculations)
-	C0 = Ixx * Izz * Ixz^2;
+	C0 = Ixx * Izz - Ixz^2;
 	C1 = Izz / C0;
 	C2 = Ixz / C0;
 	C3 = C2 * (Ixx - Iyy + Izz);

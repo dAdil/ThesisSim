@@ -1,16 +1,16 @@
 Working on:
- - main.m
+ - calculateControls
+ - Porting to pixhawk
+ - Test effect of unknown inertias, mass, CG, output changes on responses.
+ - Investigate effect of gyroscopic loads.
+ - Investigate effect of aerodynamic loads. 
 
 Issues/Improvements to working code:
  - Get improved thrust model from Matt / calculate it yourself. 
-
- - Check and debug stateRates
- - Check and debug bodyForces
- - Check and debug integrate
  - Double check inertiaTriPrism
 
 ====================================================
 
-main
-----
-Lots.
+calculateControls
+ - put betweenPi in a function
+ - put pwmLimits in a function
