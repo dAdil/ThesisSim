@@ -37,7 +37,7 @@ U = [1500,1500,1500,1500]';
 % Step forward integration
 for i = 1:length(t)
 	X = integrate(X,U,dt);
-	fprintf(fileID,"%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\n",X(1),X(2),X(3),X(4),X(5),X(6),X(7),X(8),X(9),X(10),X(11),X(12),X(13));
+	fprintf(fileID,"%4.4f,%4.4f,%4.4f,%4.4f,%4.4f,%4.4f,%4.4f,%4.4f,%4.4f,%4.4f,%4.4f,%4.4f,%4.4f,%d,%d,%d,%d,%4.4f\n",X(1),X(2),X(3),X(4),X(5),X(6),X(7),X(8),X(9),X(10),X(11),X(12),X(13),U(1),U(2),U(3),U(4),t(i));
 end
 
 
